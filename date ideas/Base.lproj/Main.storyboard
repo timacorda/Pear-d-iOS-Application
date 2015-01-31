@@ -17,18 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8SY-iw-vlM">
-                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-wN-8uS">
-                                <rect key="frame" x="0.0" y="92" width="600" height="451"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gLQ-iv-7lc">
+                                <rect key="frame" x="3" y="103" width="594" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dateCell" rowHeight="100" id="QTl-2m-rPP" customClass="dateCell" customModule="date_ideas" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dateCell" rowHeight="99" id="kH5-yi-dHc" customClass="dateCell" customModule="date_ideas" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kH5-yi-dHc" id="9NP-r1-UpS">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -60,12 +53,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="dateCategory" destination="DUp-3k-Og5" id="GcA-O3-780"/>
-                                            <outlet property="dateImage" destination="w3Q-7Z-vNo" id="XNn-wd-hAQ"/>
-                                            <outlet property="dateName" destination="J94-mj-r5O" id="41w-c8-xvN"/>
-                                            <outlet property="dollarImage" destination="cuU-9V-Lgw" id="r1p-1A-Q7i"/>
-                                            <outlet property="voteCount" destination="MqH-1e-D7g" id="W4M-b3-iJ5"/>
-                                            <segue destination="lQD-Un-G0E" kind="show" id="STQ-ec-ynG"/>
+                                            <outlet property="dateCategory" destination="4rw-KJ-LOj" id="jAA-sW-yVT"/>
+                                            <outlet property="dateImage" destination="lnt-eU-tuY" id="CZH-hf-VuY"/>
+                                            <outlet property="dateName" destination="ME1-5N-e7K" id="zXV-6N-O1v"/>
+                                            <outlet property="dollarImage" destination="24Y-ma-XRr" id="Ac2-3B-XLf"/>
+                                            <outlet property="voteCount" destination="CIU-js-n8i" id="8iq-5Z-5AA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -74,6 +66,13 @@
                                     <outlet property="delegate" destination="RVb-By-dqG" id="clo-02-zCU"/>
                                 </connections>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8SY-iw-vlM">
+                                <rect key="frame" x="0.0" y="64" width="600" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -84,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qb-tj-1t1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="-578"/>
+            <point key="canvasLocation" x="2495" y="-584"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UcI-Yr-CEo">
