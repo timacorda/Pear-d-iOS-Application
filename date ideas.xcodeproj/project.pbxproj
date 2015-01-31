@@ -18,6 +18,8 @@
 		2EBE83561A7C992800C27287 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE83551A7C992800C27287 /* Images.xcassets */; };
 		2EBE83591A7C992800C27287 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE83571A7C992800C27287 /* LaunchScreen.xib */; };
 		2EBE83651A7C992800C27287 /* date_ideasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE83641A7C992800C27287 /* date_ideasTests.swift */; };
+		2ECA5DD41A7D7BDF00FC5E1E /* filteredTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA5DD31A7D7BDF00FC5E1E /* filteredTableViewController.swift */; };
+		2ECA5DD61A7D7CE300FC5E1E /* filteredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA5DD51A7D7CE300FC5E1E /* filteredTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		2EBE835E1A7C992800C27287 /* date ideasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "date ideasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBE83631A7C992800C27287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EBE83641A7C992800C27287 /* date_ideasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = date_ideasTests.swift; sourceTree = "<group>"; };
+		2ECA5DD31A7D7BDF00FC5E1E /* filteredTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = filteredTableViewController.swift; sourceTree = "<group>"; };
+		2ECA5DD51A7D7CE300FC5E1E /* filteredTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = filteredTableViewCell.swift; path = ../filteredTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				2EBE834C1A7C992800C27287 /* AppDelegate.swift */,
+				2ECA5DD51A7D7CE300FC5E1E /* filteredTableViewCell.swift */,
 				2EBE834E1A7C992800C27287 /* HomeViewController.swift */,
 				2EBE83501A7C992800C27287 /* SecondViewController.swift */,
 				2EBE83521A7C992800C27287 /* Main.storyboard */,
+				2ECA5DD31A7D7BDF00FC5E1E /* filteredTableViewController.swift */,
 				2E6EA4921A7D4249008E6151 /* SubmissionViewController.swift */,
 				2E6EA4901A7D41EF008E6151 /* FeelingLuckyViewController.swift */,
 				2EA50FB71A7CB0F300C7E798 /* dateModel.swift */,
@@ -227,12 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECA5DD61A7D7CE300FC5E1E /* filteredTableViewCell.swift in Sources */,
 				2EBE83511A7C992800C27287 /* SecondViewController.swift in Sources */,
 				2EA50FBA1A7CB3B700C7E798 /* dateCell.swift in Sources */,
 				2EA50FB81A7CB0F300C7E798 /* dateModel.swift in Sources */,
 				2E6EA4931A7D4249008E6151 /* SubmissionViewController.swift in Sources */,
 				2EBE834D1A7C992800C27287 /* AppDelegate.swift in Sources */,
 				2E6EA4911A7D41EF008E6151 /* FeelingLuckyViewController.swift in Sources */,
+				2ECA5DD41A7D7BDF00FC5E1E /* filteredTableViewController.swift in Sources */,
 				2EBE834F1A7C992800C27287 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

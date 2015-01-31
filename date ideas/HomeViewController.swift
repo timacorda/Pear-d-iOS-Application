@@ -19,15 +19,31 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         amusementpark.photo = UIImage(named: "Amusement Park")
         amusementpark.price = 0;
         dates.append(amusementpark)
+        var mcDonalds = dateModel(name: "McDonalds", category: "Food & Drink");
+        mcDonalds.photo = UIImage(named: "mcdongers")
+        mcDonalds.price = 0;
+        dates.append(mcDonalds)
+        var netflix = dateModel(name: "Netflix", category: "At Home");
+        netflix.photo = UIImage(named: "netflix")
+        netflix.price = 0;
+        dates.append(netflix)
+        var farmers = dateModel(name: "Farmers Market", category: "Arts/Culture");
+        farmers.photo = UIImage(named: "farmers")
+        farmers.price = 0;
+        dates.append(farmers)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
-        if( viewController == tabBarController.viewControllers![1] as UIViewController) {
-            println("HELLO MOVED TO SECOND PAGE")
+        if(viewController == tabBarController.viewControllers![1] as UIViewController) {
+            var viewer =  tabBarController.viewControllers![1] as UINavigationController
+            if viewer.topViewController is SecondViewController {
+                var top = viewer.topViewController as SecondViewController
+                top.dates = self.dates
+            }
         }
     }
-    
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true);
         println("REFRESHED PAGE")

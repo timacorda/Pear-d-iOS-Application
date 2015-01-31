@@ -15,12 +15,14 @@ class dateModel: NSObject {
     var category: String
     var photo: UIImage?
     var price: Int
+    var date: NSDate?
     
     init(name: String, category: String) {
         self.name = name
         self.category = category
         self.rating = 0;
         self.price = 0;
+        self.date = NSDate()
     }
     
 }
