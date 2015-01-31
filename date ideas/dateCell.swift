@@ -15,6 +15,8 @@ class dateCell: UITableViewCell {
     @IBOutlet weak var dateCategory: UILabel!
     @IBOutlet weak var voteCount: UILabel!
     @IBOutlet weak var dollarImage: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
