@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EA50FB81A7CB0F300C7E798 /* dateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50FB71A7CB0F300C7E798 /* dateModel.swift */; };
+		2EA50FBA1A7CB3B700C7E798 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50FB91A7CB3B700C7E798 /* dateCell.swift */; };
 		2EBE834D1A7C992800C27287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE834C1A7C992800C27287 /* AppDelegate.swift */; };
 		2EBE834F1A7C992800C27287 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE834E1A7C992800C27287 /* FirstViewController.swift */; };
 		2EBE83511A7C992800C27287 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE83501A7C992800C27287 /* SecondViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EA50FB71A7CB0F300C7E798 /* dateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateModel.swift; sourceTree = "<group>"; };
+		2EA50FB91A7CB3B700C7E798 /* dateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
 		2EBE83471A7C992800C27287 /* date ideas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date ideas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBE834B1A7C992800C27287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EBE834C1A7C992800C27287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				2EBE834E1A7C992800C27287 /* FirstViewController.swift */,
 				2EBE83501A7C992800C27287 /* SecondViewController.swift */,
 				2EBE83521A7C992800C27287 /* Main.storyboard */,
+				2EA50FB71A7CB0F300C7E798 /* dateModel.swift */,
+				2EA50FB91A7CB3B700C7E798 /* dateCell.swift */,
 				2EBE83551A7C992800C27287 /* Images.xcassets */,
 				2EBE83571A7C992800C27287 /* LaunchScreen.xib */,
 				2EBE834A1A7C992800C27287 /* Supporting Files */,
@@ -216,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EBE83511A7C992800C27287 /* SecondViewController.swift in Sources */,
+				2EA50FBA1A7CB3B700C7E798 /* dateCell.swift in Sources */,
+				2EA50FB81A7CB0F300C7E798 /* dateModel.swift in Sources */,
 				2EBE834D1A7C992800C27287 /* AppDelegate.swift in Sources */,
 				2EBE834F1A7C992800C27287 /* FirstViewController.swift in Sources */,
 			);
@@ -411,6 +419,7 @@
 				2EBE836A1A7C992800C27287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EBE836B1A7C992800C27287 /* Build configuration list for PBXNativeTarget "date ideasTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				2EBE836D1A7C992800C27287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
