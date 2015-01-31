@@ -8,20 +8,17 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITabBarControllerDelegate {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITabBarControllerDelegate {
     var dates = [dateModel]()
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarController?.delegate = self
-        
         var amusementpark = dateModel(name: "Disneyland", category: "Active/Adventure");
         amusementpark.photo = UIImage(named: "Amusement Park")
         amusementpark.price = 0;
         dates.append(amusementpark)
-        println(" WE RELOADED THE PAGE")
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -56,6 +53,15 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.dollarImage.image = UIImage(named: "zero");
         }
         return cell;
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "dateSegue") {
+            
+        }
+    }
+    
+    @IBAction func unwindToHome(segue: UIStoryboardSegue)  {
+        
     }
     
     override func didReceiveMemoryWarning() {

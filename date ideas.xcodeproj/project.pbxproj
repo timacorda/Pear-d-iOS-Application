@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6EA4911A7D41EF008E6151 /* FeelingLuckyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6EA4901A7D41EF008E6151 /* FeelingLuckyViewController.swift */; };
+		2E6EA4931A7D4249008E6151 /* SubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6EA4921A7D4249008E6151 /* SubmissionViewController.swift */; };
 		2EA50FB81A7CB0F300C7E798 /* dateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50FB71A7CB0F300C7E798 /* dateModel.swift */; };
 		2EA50FBA1A7CB3B700C7E798 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50FB91A7CB3B700C7E798 /* dateCell.swift */; };
 		2EBE834D1A7C992800C27287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE834C1A7C992800C27287 /* AppDelegate.swift */; };
-		2EBE834F1A7C992800C27287 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE834E1A7C992800C27287 /* FirstViewController.swift */; };
+		2EBE834F1A7C992800C27287 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE834E1A7C992800C27287 /* HomeViewController.swift */; };
 		2EBE83511A7C992800C27287 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE83501A7C992800C27287 /* SecondViewController.swift */; };
 		2EBE83541A7C992800C27287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE83521A7C992800C27287 /* Main.storyboard */; };
 		2EBE83561A7C992800C27287 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBE83551A7C992800C27287 /* Images.xcassets */; };
@@ -29,12 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E6EA4901A7D41EF008E6151 /* FeelingLuckyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingLuckyViewController.swift; sourceTree = "<group>"; };
+		2E6EA4921A7D4249008E6151 /* SubmissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionViewController.swift; sourceTree = "<group>"; };
 		2EA50FB71A7CB0F300C7E798 /* dateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateModel.swift; sourceTree = "<group>"; };
 		2EA50FB91A7CB3B700C7E798 /* dateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
 		2EBE83471A7C992800C27287 /* date ideas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date ideas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBE834B1A7C992800C27287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EBE834C1A7C992800C27287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EBE834E1A7C992800C27287 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		2EBE834E1A7C992800C27287 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2EBE83501A7C992800C27287 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2EBE83531A7C992800C27287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EBE83551A7C992800C27287 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -84,9 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				2EBE834C1A7C992800C27287 /* AppDelegate.swift */,
-				2EBE834E1A7C992800C27287 /* FirstViewController.swift */,
+				2EBE834E1A7C992800C27287 /* HomeViewController.swift */,
 				2EBE83501A7C992800C27287 /* SecondViewController.swift */,
 				2EBE83521A7C992800C27287 /* Main.storyboard */,
+				2E6EA4921A7D4249008E6151 /* SubmissionViewController.swift */,
+				2E6EA4901A7D41EF008E6151 /* FeelingLuckyViewController.swift */,
 				2EA50FB71A7CB0F300C7E798 /* dateModel.swift */,
 				2EA50FB91A7CB3B700C7E798 /* dateCell.swift */,
 				2EBE83551A7C992800C27287 /* Images.xcassets */,
@@ -224,8 +230,10 @@
 				2EBE83511A7C992800C27287 /* SecondViewController.swift in Sources */,
 				2EA50FBA1A7CB3B700C7E798 /* dateCell.swift in Sources */,
 				2EA50FB81A7CB0F300C7E798 /* dateModel.swift in Sources */,
+				2E6EA4931A7D4249008E6151 /* SubmissionViewController.swift in Sources */,
 				2EBE834D1A7C992800C27287 /* AppDelegate.swift in Sources */,
-				2EBE834F1A7C992800C27287 /* FirstViewController.swift in Sources */,
+				2E6EA4911A7D41EF008E6151 /* FeelingLuckyViewController.swift in Sources */,
+				2EBE834F1A7C992800C27287 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
