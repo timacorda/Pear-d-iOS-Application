@@ -8,13 +8,41 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var dates = [dateModel]()
+    @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var amusementpark = dateModel(name: "Disneyland", category: "Active/Adventure");
+        amusementpark.photo = UIImage(named: "Amusement Park")
+        amusementpark.price = 0;
+        dates.append(amusementpark)
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dates.count;
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        println("You selected cell #\(indexPath.row)!")
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("dateCell", forIndexPath:indexPath) as dateCell
+        let date = dates[indexPath.row]
+        cell.dateName!.text = date.name;
+        cell.dateCategory!.text = date.category
+        cell.voteCount.text = String(date.rating)
+        cell.dateImage.image = date.photo;
+        if(date.price == 0 ) {
+            cell.dollarImage.image = UIImage(named: "zero");
+        }
+        return cell;
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
