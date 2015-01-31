@@ -9,11 +9,8 @@
 import UIKit
 
 class SubmissionViewController: UIViewController {
-    var date: dateModel?
-    @IBOutlet var dateName: UITextField!
-    @IBOutlet var categoryPicker: UIPickerView!
+    //var date: dateModel?
     
-    @IBOutlet var descriptionField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,13 +21,14 @@ class SubmissionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "doneSegue" {
             if(dateName.text.isEmpty) {
                 //set fields here!!!
             }
         }
     }
+*/
     /*
     // MARK: - Navigation
 
