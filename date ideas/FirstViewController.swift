@@ -8,17 +8,32 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITabBarControllerDelegate {
     var dates = [dateModel]()
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBarController?.delegate = self
+        
         var amusementpark = dateModel(name: "Disneyland", category: "Active/Adventure");
         amusementpark.photo = UIImage(named: "Amusement Park")
         amusementpark.price = 0;
         dates.append(amusementpark)
+        println(" WE RELOADED THE PAGE")
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
+        if( viewController == tabBarController.viewControllers![1] as UIViewController) {
+            println("HELLO MOVED TO SECOND PAGE")
+        }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true);
+        println("REFRESHED PAGE")
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
