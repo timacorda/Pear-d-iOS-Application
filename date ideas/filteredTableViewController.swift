@@ -9,6 +9,7 @@
 import UIKit
 
 class filteredTableViewController: UITableViewController {
+    var theDates = datewrapper()
     var dates = [dateModel]()
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qb-tj-1t1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3117.5" y="-661.5"/>
+            <point key="canvasLocation" x="2709.5" y="-1044.5"/>
         </scene>
         <!--Submission Page-->
         <scene sceneID="UcI-Yr-CEo">
@@ -121,7 +121,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tc0-Vj-OKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Rsb-zk-HqJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4027" y="-853"/>
+            <point key="canvasLocation" x="3198.5" y="-665.5"/>
         </scene>
         <!--FeelinLucky-->
         <scene sceneID="hNz-n2-bh7">
@@ -132,7 +132,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -140,9 +140,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3749" y="58"/>
+            <point key="canvasLocation" x="2780.5" y="-199.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Logo Here-->
         <scene sceneID="aOT-qx-iUC">
             <objects>
                 <viewController id="PRC-kb-Ub8" sceneMemberID="viewController">
@@ -153,12 +153,18 @@
                     <view key="view" contentMode="scaleToFill" id="TH5-KT-Pvw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGS-Hb-elf">
+                                <rect key="frame" x="16" y="72" width="128" height="92"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Logo Here" id="Ivn-wT-nG3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7n-FN-pCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2485" y="-1341"/>
+            <point key="canvasLocation" x="3198.5" y="-1405.5"/>
         </scene>
         <!--Categories / Logo-->
         <scene sceneID="wg7-f3-ORb">
@@ -169,34 +175,34 @@
                         <viewControllerLayoutGuide type="bottom" id="d9y-zM-hUK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bp2-A1-K19">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mep-rz-f2q">
-                                <rect key="frame" x="0.0" y="306" width="600" height="121"/>
+                                <rect key="frame" x="21" y="297" width="332" height="106"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="At Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8O-l8-OgG">
-                                <rect key="frame" x="0.0" y="421" width="600" height="130"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Arts/Culture">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1m-Vs-Cxl">
-                                <rect key="frame" x="0.0" y="64" width="600" height="121"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Active/Adventure">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c51-nq-vWn">
-                                <rect key="frame" x="0.0" y="185" width="600" height="121"/>
+                                <rect key="frame" x="0.0" y="198" width="380" height="97"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Food &amp; Drink">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8O-l8-OgG">
+                                <rect key="frame" x="49" y="411" width="304" height="134"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Arts/Culture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -224,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2245" y="404"/>
+            <point key="canvasLocation" x="2218.5" y="875.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="95T-9L-YIO">
@@ -257,6 +263,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UKQ-AG-8Xc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -265,7 +272,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDd-Io-8cR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-672"/>
+            <point key="canvasLocation" x="2218.5" y="-1044.5"/>
         </scene>
         <!--Filters-->
         <scene sceneID="jee-Ek-0rf">
@@ -273,6 +280,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mk5-gz-dvs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Filters" image="first" id="iYr-RS-jyM"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BGb-qB-Pj8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -292,6 +300,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Iy-Tq-1PS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feelin' Lucky" image="first" id="UyN-DA-Qwf"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qDp-cJ-g7B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -303,14 +312,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tem-Vx-rX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3069" y="42"/>
+            <point key="canvasLocation" x="2282.5" y="-199.5"/>
         </scene>
         <!--Filtered Table View Controller-->
         <scene sceneID="q2W-gi-Gre">
             <objects>
                 <tableViewController id="i0E-NK-v39" customClass="filteredTableViewController" customModule="date_ideas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zfT-Y4-0Xv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -340,7 +349,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fF4-XE-oYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2941" y="731"/>
+            <point key="canvasLocation" x="2684.5" y="875.5"/>
         </scene>
     </scenes>
     <resources>

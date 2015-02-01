@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITabBarControllerDelegate {
-    var dates = [dateModel]()
+    var theDates = datewrapper()
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -18,19 +18,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         var amusementpark = dateModel(name: "Disneyland", category: "Active/Adventure");
         amusementpark.photo = UIImage(named: "Amusement Park")
         amusementpark.price = 0;
-        dates.append(amusementpark)
+        theDates.addDate(amusementpark)
         var mcDonalds = dateModel(name: "McDonalds", category: "Food & Drink");
         mcDonalds.photo = UIImage(named: "mcdongers")
         mcDonalds.price = 0;
-        dates.append(mcDonalds)
+        theDates.addDate(mcDonalds)
         var netflix = dateModel(name: "Netflix", category: "At Home");
         netflix.photo = UIImage(named: "netflix")
         netflix.price = 0;
-        dates.append(netflix)
+        theDates.addDate(netflix)
         var farmers = dateModel(name: "Farmers Market", category: "Arts/Culture");
         farmers.photo = UIImage(named: "farmers")
         farmers.price = 0;
-        dates.append(farmers)
+        theDates.addDate(farmers)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -39,6 +39,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             var viewer =  tabBarController.viewControllers![1] as UINavigationController
             if viewer.topViewController is SecondViewController {
                 var top = viewer.topViewController as SecondViewController
+                
                 top.dates = self.dates
             }
         }
