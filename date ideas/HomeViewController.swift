@@ -40,7 +40,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             if viewer.topViewController is SecondViewController {
                 var top = viewer.topViewController as SecondViewController
                 
-                top.dates = self.dates
+                top.theDates = self.theDates
             }
         }
     }
@@ -51,7 +51,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dates.count;
+        return theDates.count();
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -61,7 +61,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("dateCell", forIndexPath:indexPath) as dateCell
-        let date = dates[indexPath.row]
+        let date = theDates.dates[indexPath.row]
         cell.dateName!.text = date.name;
         cell.dateCategory!.text = date.category
         cell.voteCount.text = String(date.rating)
