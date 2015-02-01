@@ -8,10 +8,9 @@
 
 import UIKit
 
-class filteredTableViewController: UITableViewController {
-    var theDates = datewrapper()
+class filteredTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var dates = [dateModel]()
-    
+    var theDates = datewrapper()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +31,7 @@ class filteredTableViewController: UITableViewController {
             var viewer =  tabBarController.viewControllers![1] as UINavigationController
             if viewer.topViewController is SecondViewController {
                 var top = viewer.topViewController as SecondViewController
-                top.dates = self.dates
+                top.theDates = self.theDates
             }
         }
     }
