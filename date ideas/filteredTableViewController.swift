@@ -11,6 +11,7 @@ import UIKit
 class filteredTableViewController: UITableViewController {
     var theDates = datewrapper()
     var dates = [dateModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,33 +22,48 @@ class filteredTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 1
+    func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
+        if(viewController == tabBarController.viewControllers![1] as UIViewController) {
+            var viewer =  tabBarController.viewControllers![1] as UINavigationController
+            if viewer.topViewController is SecondViewController {
+                var top = viewer.topViewController as SecondViewController
+                top.dates = self.dates
+            }
+        }
     }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return dates.count
-    }
-
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell1", forIndexPath: indexPath) as filteredTableViewCell
-        cell.dateName.text = dates[indexPath.row].name
-        return cell
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true);
+        println("REFRESHED PAGE")
     }
-
-
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dates.count;
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        println("You selected cell #\(indexPath.row)!")
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("dateCell", forIndexPath:indexPath) as dateCell
+        let date = dates[indexPath.row]
+        cell.dateName!.text = date.name;
+        cell.dateCategory!.text = date.category
+        cell.voteCount.text = String(date.rating)
+        cell.dateImage.image = date.photo;
+        if(date.price == 0 ) {
+            cell.dollarImage.image = UIImage(named: "zero");
+        }
+        return cell;
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
