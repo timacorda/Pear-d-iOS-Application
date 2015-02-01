@@ -18,19 +18,28 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         var amusementpark = dateModel(name: "Disneyland", category: "Active/Adventure");
         amusementpark.photo = UIImage(named: "Amusement Park")
         amusementpark.price = 0;
+        amusementpark.date = NSDate()
         dates.append(amusementpark)
         var mcDonalds = dateModel(name: "McDonalds", category: "Food & Drink");
         mcDonalds.photo = UIImage(named: "mcdongers")
         mcDonalds.price = 0;
+        mcDonalds.date = NSDate()
         dates.append(mcDonalds)
         var netflix = dateModel(name: "Netflix", category: "At Home");
         netflix.photo = UIImage(named: "netflix")
         netflix.price = 0;
+        netflix.date = NSDate()
         dates.append(netflix)
         var farmers = dateModel(name: "Farmers Market", category: "Arts/Culture");
         farmers.photo = UIImage(named: "farmers")
         farmers.price = 0;
+        farmers.date = NSDate()
         dates.append(farmers)
+        amusementpark = dateModel(name: "Disneylandafter 20", category: "Active/Adventure");
+        amusementpark.photo = UIImage(named: "Amusement Park")
+        amusementpark.price = 0;
+        amusementpark.date = NSDate()
+        println("done waiting")
         // Do any additional setup after loading the view, typically from a nib.
     }
     

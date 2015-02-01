@@ -11,7 +11,7 @@ import UIKit
 class filteredTableViewCell: UITableViewCell {
     
     //@IBOutlet weak var dateImage: UIImageView!
-    @IBOutlet weak var dateName: UILabel!
+    //@IBOutlet weak var dateName: UILabel!
     //@IBOutlet weak var dateCategory: UILabel!
     //@IBOutlet weak var voteCount: UILabel!
    //@IBOutlet weak var dollarImage: UIImageView!

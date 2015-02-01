@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class SecondViewController: UIViewController, UITabBarControllerDelegate {
     var dates = [dateModel]()
@@ -27,20 +28,24 @@ class SecondViewController: UIViewController, UITabBarControllerDelegate {
     
     func actionAdventure(sender: UIButton) {
         sortedDates = dates.filter({$0.category == "Active/Adventure"})
+        sortedDates = sorted(sortedDates,{$0.date.compare($1.date) == NSComparisonResult.OrderedDescending})
         performSegueWithIdentifier("sortSegue", sender: self)
     }
     
     func foodDrink(sender: UIButton) {
         sortedDates = dates.filter({$0.category == "Food & Drink"})
+        sortedDates = sorted(sortedDates,{$0.date.compare($1.date) == NSComparisonResult.OrderedDescending})
         performSegueWithIdentifier("sortSegue", sender: self)
     }
     
     func atHome(sender: UIButton) {
         sortedDates = dates.filter({$0.category == "At Home"})
+        sortedDates = sorted(sortedDates,{$0.date.compare($1.date) == NSComparisonResult.OrderedDescending})
         performSegueWithIdentifier("sortSegue", sender: self)
     }
     func artsCulture(sender: UIButton) {
         sortedDates = dates.filter({$0.category == "Arts/Culture"})
+        sortedDates = sorted(sortedDates,{$0.date.compare($1.date) == NSComparisonResult.OrderedDescending})
         performSegueWithIdentifier("sortSegue", sender: self)
     }
     func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {

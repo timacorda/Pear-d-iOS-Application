@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 
+
 class dateModel: NSObject {
     var name: String
     var rating: Int
     var category: String
     var photo: UIImage?
     var price: Int
-    var date: NSDate?
+    var date: NSDate
     
     init(name: String, category: String) {
         self.name = name
