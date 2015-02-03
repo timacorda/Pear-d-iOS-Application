@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E6EA4911A7D41EF008E6151 /* FeelingLuckyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6EA4901A7D41EF008E6151 /* FeelingLuckyViewController.swift */; };
-		2E6EA4931A7D4249008E6151 /* SubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6EA4921A7D4249008E6151 /* SubmissionViewController.swift */; };
+		2E9E55121A7DB64B00098E42 /* dateInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E55111A7DB64B00098E42 /* dateInfoViewController.swift */; };
+		2E9E55141A7DBB6D00098E42 /* SubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E55131A7DBB6D00098E42 /* SubmissionViewController.swift */; };
+		2E9E55161A7DBF2000098E42 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E55151A7DBF2000098E42 /* FavoriteViewController.swift */; };
 		2EA50FB81A7CB0F300C7E798 /* dateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50FB71A7CB0F300C7E798 /* dateModel.swift */; };
 		2EA50FBA1A7CB3B700C7E798 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50FB91A7CB3B700C7E798 /* dateCell.swift */; };
 		2EBE834D1A7C992800C27287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE834C1A7C992800C27287 /* AppDelegate.swift */; };
@@ -35,7 +37,9 @@
 
 /* Begin PBXFileReference section */
 		2E6EA4901A7D41EF008E6151 /* FeelingLuckyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingLuckyViewController.swift; sourceTree = "<group>"; };
-		2E6EA4921A7D4249008E6151 /* SubmissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionViewController.swift; sourceTree = "<group>"; };
+		2E9E55111A7DB64B00098E42 /* dateInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateInfoViewController.swift; sourceTree = "<group>"; };
+		2E9E55131A7DBB6D00098E42 /* SubmissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionViewController.swift; sourceTree = "<group>"; };
+		2E9E55151A7DBF2000098E42 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		2EA50FB71A7CB0F300C7E798 /* dateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateModel.swift; sourceTree = "<group>"; };
 		2EA50FB91A7CB3B700C7E798 /* dateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
 		2EBE83471A7C992800C27287 /* date ideas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date ideas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,15 +97,16 @@
 		2EBE83491A7C992800C27287 /* date ideas */ = {
 			isa = PBXGroup;
 			children = (
+				2E9E55151A7DBF2000098E42 /* FavoriteViewController.swift */,
+				2E9E55131A7DBB6D00098E42 /* SubmissionViewController.swift */,
 				2EBE834C1A7C992800C27287 /* AppDelegate.swift */,
 				2ECA5DD51A7D7CE300FC5E1E /* filteredTableViewCell.swift */,
 				2EBE834E1A7C992800C27287 /* HomeViewController.swift */,
-				9B30F47C1A7D8F1400DDF435 /* FavoriteViewController.swift */,
 				2EBE83501A7C992800C27287 /* SecondViewController.swift */,
 				2EBE83521A7C992800C27287 /* Main.storyboard */,
+				2E9E55111A7DB64B00098E42 /* dateInfoViewController.swift */,
 				2ECA5DD71A7DA13D00FC5E1E /* datewrapper.swift */,
 				2ECA5DD31A7D7BDF00FC5E1E /* filteredTableViewController.swift */,
-				2E6EA4921A7D4249008E6151 /* SubmissionViewController.swift */,
 				2E6EA4901A7D41EF008E6151 /* FeelingLuckyViewController.swift */,
 				2EA50FB71A7CB0F300C7E798 /* dateModel.swift */,
 				2EA50FB91A7CB3B700C7E798 /* dateCell.swift */,
@@ -239,14 +244,15 @@
 			files = (
 				2ECA5DD61A7D7CE300FC5E1E /* filteredTableViewCell.swift in Sources */,
 				2EBE83511A7C992800C27287 /* SecondViewController.swift in Sources */,
+				2E9E55121A7DB64B00098E42 /* dateInfoViewController.swift in Sources */,
 				2EA50FBA1A7CB3B700C7E798 /* dateCell.swift in Sources */,
 				2EA50FB81A7CB0F300C7E798 /* dateModel.swift in Sources */,
-				9B30F47D1A7D8F1400DDF435 /* FavoriteViewController.swift in Sources */,
-				2E6EA4931A7D4249008E6151 /* SubmissionViewController.swift in Sources */,
 				2ECA5DD81A7DA13D00FC5E1E /* datewrapper.swift in Sources */,
 				2EBE834D1A7C992800C27287 /* AppDelegate.swift in Sources */,
+				2E9E55141A7DBB6D00098E42 /* SubmissionViewController.swift in Sources */,
 				2E6EA4911A7D41EF008E6151 /* FeelingLuckyViewController.swift in Sources */,
 				2ECA5DD41A7D7BDF00FC5E1E /* filteredTableViewController.swift in Sources */,
+				2E9E55161A7DBF2000098E42 /* FavoriteViewController.swift in Sources */,
 				2EBE834F1A7C992800C27287 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

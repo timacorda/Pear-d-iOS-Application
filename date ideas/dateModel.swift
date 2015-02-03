@@ -12,18 +12,28 @@ import UIKit
 
 class dateModel: NSObject {
     var name: String
-    var rating: Int
+    var location: String
     var category: String
-    var photo: UIImage?
     var price: Int
-    var date: NSDate
+    var desc: String
+    var hours: String
+    var phone: String
+    var rating: Int
+    var photo: UIImage?
+    var photo2: UIImage?
+    var date: NSDate?
     
-    init(name: String, category: String) {
+    init(name: String, location: String, category: String, price: Int, desc: String, hours: String, phone: String, rating: Int, photo: UIImage?, date: NSDate?) {
         self.name = name
+        self.location = location
         self.category = category
-        self.rating = 0;
         self.price = 0;
-        self.date = NSDate()
+        self.desc = desc
+        self.hours = hours
+        self.phone = phone
+        self.rating = rating
+        self.photo = photo
+        self.date = date
     }
     
 }

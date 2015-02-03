@@ -31,7 +31,7 @@ class filteredTableViewController: UIViewController, UITableViewDelegate, UITabl
             var viewer =  tabBarController.viewControllers![1] as UINavigationController
             if viewer.topViewController is SecondViewController {
                 var top = viewer.topViewController as SecondViewController
-                top.theDates = self.theDates
+                top.theDates.dates = self.dates
             }
         }
     }
@@ -54,12 +54,9 @@ class filteredTableViewController: UIViewController, UITableViewDelegate, UITabl
         let cell = tableView.dequeueReusableCellWithIdentifier("dateCell", forIndexPath:indexPath) as dateCell
         let date = dates[indexPath.row]
         cell.dateName!.text = date.name;
-        cell.dateCategory!.text = date.category
         cell.voteCount.text = String(date.rating)
         cell.dateImage.image = date.photo;
-        if(date.price == 0 ) {
-            cell.dollarImage.image = UIImage(named: "zero");
-        }
+        cell.dollarImage.image = date.photo2
         return cell;
     }
     
